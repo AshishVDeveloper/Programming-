@@ -1,0 +1,31 @@
+Aim: Implement program for Linear Search
+
+#include<stdio.h>
+
+int main()
+{
+int a[10]={15,25,4,34,47,8,112,73,5,67};
+int item,i,flag;
+printf("\n Enter item which is to be searched\n");
+scanf("%d",&item);
+for(i=0;i<10;i++)
+{
+if(a[i]==item)
+{
+flag=i+1;
+break;
+}
+else
+{
+flag=0;
+}
+}
+if(flag!=0)
+{
+printf("\nItem found at location %d\n",flag);
+}
+else
+{
+printf("\nItem not found\n");
+}
+}	

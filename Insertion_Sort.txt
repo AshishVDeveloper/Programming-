@@ -1,0 +1,25 @@
+Aim:Implement program for Insertion Sort
+
+#include<stdio.h>
+int main ()
+{
+int i, j, k,temp;
+int a[8] = {18,29,4,8,42,31,94,50};
+printf("\nprinting sorted elements...\n");
+for(k=1; k<8; k++)
+{
+temp = a[k];
+j= k-1;
+while(j>=0 && temp <= a[j])
+{
+a[j+1] = a[j];
+j = j-1;
+}
+a[j+1] = temp;
+}
+for(i=0;i<8;i++)
+{
+printf("%d\t",a[i]);
+}
+return 0;
+}
